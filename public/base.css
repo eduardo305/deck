@@ -1,0 +1,53 @@
+body {
+  background: #ddd;
+}
+
+.container {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 4px 4px 20px #888888;
+  border-radius: 6px;
+}
+
+.card-content {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+.card-content .card-symbol {
+  background-image: url('./img/spade.png');
+  width: 110px;
+  height: 110px;
+  background-size: 110px;
+}
+
+.card-content .card-header {
+  background-image: url('./img/spade.png');
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.card-content .card-footer {
+  background-image: url('./img/spade.png');
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.translate-method {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
