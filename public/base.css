@@ -2,23 +2,45 @@ body {
   background: #ddd;
 }
 
+.header {
+  text-align: center;
+}
+
+.header h2 {
+  font-family: cursive;
+}
+
+.logo {
+  background-image: url('./img/be-the-center.png');
+  width: 200px;
+  height: 200px;
+  background-size: 200px;
+  display: inline-block;
+}
+
 .container {
   position: relative;
 }
 
+.footer {
+  text-align: center;
+}
+
 .card {
-  position: absolute;
   box-sizing: border-box;
   background-color: white;
   box-shadow: 4px 4px 20px #888888;
   border-radius: 6px;
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
 }
 
 .card-content {
   position: relative;
   width: 200px;
   height: 300px;
-  margin: 10px;
 }
 
 .card-content .card-symbol {
@@ -30,9 +52,12 @@ body {
 
 .card-content .card-header {
   background-image: url('./img/spade.png');
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-size: 30px;
+  position: absolute;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
 }
 
 .card-content .card-footer {
@@ -41,8 +66,8 @@ body {
   height: 30px;
   background-size: 30px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
 }
 
 .translate-method {
@@ -50,4 +75,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
+}
+
+.absolute-method {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -55px;
+  margin-top: -55px;
+}
+
+.my-way-method {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
