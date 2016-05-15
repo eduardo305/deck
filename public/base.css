@@ -1,17 +1,23 @@
 body {
   background: #ddd;
+  background-image: url('http://telias.free.fr/textures_tex/wood/wood1.jpg');
 }
 
 .container {
   position: relative;
 }
 
+h1 {
+  font-family: fantasy;
+}
+
 .card {
-  position: absolute;
+  display: inline-block;
   box-sizing: border-box;
   background-color: white;
-  box-shadow: 4px 4px 20px #888888;
+  box-shadow: 0px 0px 8px #000000;
   border-radius: 6px;
+  margin: 10px;
 }
 
 .card-content {
@@ -43,6 +49,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  transform: rotate(180deg);
 }
 
 .translate-method {
@@ -50,4 +57,35 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
+}
+
+.absolute-method {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -55px;
+  margin-top: -55px;
+}
+
+.no-margins-method {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.flex-method {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-method .card-symbol {
+  align-self: center;
+}
+
+.flex-method .card-footer {
+  position: relative;
+  align-self: flex-end;
 }
