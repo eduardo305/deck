@@ -11,7 +11,11 @@ body {
 }
 
 .container {
-  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -29,23 +33,22 @@ body {
 }
 
 .card {
-  display: inline-block;
-  margin: 10px;
-  background: white;
-  box-shadow: 10px 10px 20px gray;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 6px;
+  background: white;
+  padding: 10px 0 10px 0;
+  margin: 10px;
+  box-shadow: 10px 10px 20px gray;
 }
 
 .card-content {
-  position: relative;
+  height: 260px;
   width: 200px;
-  height: 300px;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .card-header {
-  position: absolute;
   background-image: url('https://pixabay.com/static/uploads/photo/2013/07/12/12/01/suit-of-spades-145116_960_720.png');
   background-size: 30px;
   width: 30px;
@@ -53,22 +56,24 @@ body {
 }
 
 .card-symbol {
-  position: absolute;
   background-image: url('https://pixabay.com/static/uploads/photo/2013/07/12/12/01/suit-of-spades-145116_960_720.png');
   background-size: 100px;
   width: 100px;
   height: 100px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .card-footer {
-  position: absolute;
   background-image: url('https://pixabay.com/static/uploads/photo/2013/07/12/12/01/suit-of-spades-145116_960_720.png');
   background-size: 30px;
   width: 30px;
   height: 30px;
-  bottom: 10px;
-  right: 10px
+}
+
+.card-symbol {
+  align-self: center;
+}
+
+.card-footer {
+  align-self: flex-end;
+  transform: rotate(180deg);
 }
