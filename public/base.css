@@ -1,91 +1,66 @@
 body {
-  background: #ddd;
-  background-image: url('http://telias.free.fr/textures_tex/wood/wood1.jpg');
+  background: #f4f4f4;
+}
+
+.positioner {
+  max-width: 970px;
+  margin: 0 auto;
 }
 
 .container {
-  position: relative;
-}
-
-h1 {
-  font-family: fantasy;
-}
-
-.card {
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: white;
-  box-shadow: 0px 0px 8px #000000;
-  border-radius: 6px;
-  margin: 10px;
-}
-
-.card-content {
-  position: relative;
-  width: 200px;
-  height: 300px;
-  margin: 10px;
-}
-
-.card-content .card-symbol {
-  background-image: url('./img/spade.png');
-  width: 110px;
-  height: 110px;
-  background-size: 110px;
-}
-
-.card-content .card-header {
-  background-image: url('./img/spade.png');
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-}
-
-.card-content .card-footer {
-  background-image: url('./img/spade.png');
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: rotate(180deg);
-}
-
-.translate-method {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-}
-
-.absolute-method {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -55px;
-  margin-top: -55px;
-}
-
-.no-margins-method {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.flex-method {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.flex-method .card-symbol {
-  align-self: center;
+
+.thumbnail {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 200px;
+  background: white;
+  border-radius: 1px solid #f4f4f4;
 }
 
-.flex-method .card-footer {
-  position: relative;
-  align-self: flex-end;
+.thumbnail-content {
+  padding: 10px;
+}
+
+.thumbnail-content img {
+  max-width: 100%;
+}
+
+.tools {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0 0px 0;
+}
+
+.tools li {
+  color: #aaa;
+  margin: 0 10px 0 0;
+  font-size: 12px;
+}
+
+.tools .favorite span {
+  background-image: url('https://d13yacurqjgara.cloudfront.net/assets/icon-hearts-2x-28e929b58a8150518d337112b531d797d130df4b2dad41f125767af250d66199.png?2');
+  background-size: 15px 50px;
+  padding-left: 15px;
+  background-repeat: no-repeat;
+}
+
+.tools .comments span {
+  background-image: url('https://d13yacurqjgara.cloudfront.net/assets/icon-comments-2x-efb230001b5f5ce4dc38f82183a3a534d34bfc0ce40c5780b14e45b31cf850e6.png');
+  background-size: 14px 67px;
+  padding-left: 15px;
+  background-repeat: no-repeat;
+}
+
+.tools .views span {
+  background-image: url('https://d13yacurqjgara.cloudfront.net/assets/icon-views-sm-2x-b865539f89cd26e0bda8c7e843973f829139a277d746a13795f21a273c51fc89.png');
+  background-size: 15px 11px;
+  padding-left: 18px;
+  background-repeat: no-repeat;
 }
